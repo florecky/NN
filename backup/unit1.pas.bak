@@ -111,9 +111,10 @@ begin
       s := Plikcsv1.Strings[i];
 
       if s = '' then s:= 'a';
-         for j:=0 to s.Length - 1 do begin
-             s[j]
-         end;
+         //for j:=0 to s.Length - 1 do begin
+             //s[j]
+
+        // end;
       if (s[1] in ['R','Z']) then Begin
          tempcsv.Add(s);
       end;
@@ -124,6 +125,7 @@ begin
   plikcsv1.Free;
   StringGrid3.LoadFromCSVFile(ExtractFilePath(Application.ExeName) + 'dane\rwz_tmp.csv',';',false,0,true);
   StringGrid3.AutoSizeColumns;
+
 
 
 end;

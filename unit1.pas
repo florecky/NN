@@ -126,7 +126,7 @@ begin
   StringGrid3.LoadFromCSVFile(ExtractFilePath(Application.ExeName) + 'dane\rwz_tmp.csv',';',false,0,true);
   StringGrid3.AutoSizeColumns;
 
-
+  //jakas zmiana
 
 end;
 
